@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manasseh MBONIMANA - Developer | Designer</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .navbarmob {
+  display: none;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  display: none;
+}
+
+
+.nav-linksmobss {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+ 
+}
+
+
+.nav-linksmob li {
+  margin: 1em 0;
+}
+
+
+@media (max-width: 768px) {
+  .navbarmob {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+    
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="Manasseh Logo" />
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    
+
+    <div class="navbarmob">
+      <div class="logo">
+        <img src="img/logo.png" alt="Manasseh Logo" />
+        
+      </div>
+  
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">&#9776;</button>
+  <ul class="nav-linksmob" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+
+ 
+ 
+
+    
+    <section class="hero">
+      <div class="hero-content">
+        <div class="intro" id="home">
+          <span class="hello">Hello,</span>
+          <h1>I am <span class="name">Manasseh MBONIMANA</span></h1>
+          <h2 style="color: red; text-align: center;">Developer | Designer</h2>
+          <p style="font-size: medium;">
+            I'm a software developer with a strong interest in building desktop apps, web applications and mobile systems.
+          </p>
+          <a href="#contact" class="contact-btn">Contact me</a>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/manasseh-mbonimana-185129237" aria-label="LinkedIn"><img src="img/icons/in.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Mbonimana" aria-label="GitHub"><img src="img/icons/github.png" alt="GitHub"></a>
+            <a href="https://www.youtube.com/@doxi_69" aria-label="yYoutube"><img src="img/icons/youtube.png" alt="YouTube"></a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="img/doxi.png" alt="Manasseh Portrait" style="width: 350px;"/>
+         
+        </div>
+      </div>
+    </section>
+  </header>
+  
+
+  <main>
+    <section class="services" id="services"></section>
+      <h2 class="section-title">Services</h2>
+      <div class="services-cards">
+        <div class="service-card">
+          <img src="img/icons/dev.png" alt="Developer Icon" />
+          <h3 style="color: red;">Developer</h3>
+          <p>Web, desktop and mobile development using modern technologies and best practices.</p>
+        </div>
+        <div class="service-card">
+          <img src="img/icons/Creative.png" alt="Creative Design Icon" />
+          <h3 style="color: red;">Creative Design</h3>
+          <p>UI/UX design focused on user-centric and innovative experiences that stand out.</p>
+        </div>
+        <div class="service-card">
+          <img src="img/icons/hq.png" alt="High Quality Icon" />
+          <h3 style="color: red;">High Quality</h3>
+          <p>Delivering reliable, scalable and visually appealing solutions for your business needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">About</h2>
+      <h3>Manasseh MBONIMANA</h3>
+      <p>
+        I am dedicated to building user-focused software that combines modern design with efficient coding. My passion lies in solving real-world problems through technology, blending creativity with functionality. Whether building websites, applications, or digital products, I always strive for excellence and innovation. Let's work together to turn your ideas into impactful solutions!
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-cards">
+        <div class="project-card">
+          <h3 style="color: red;">Websites</h3>
+          <b>Static websites</b>
+          <img src="img/Airif.png" alt="Website Project" />
+          <b>Technologies:</b> <P>HTML| CSS| JavaScript</P>
+          <button style="width: 120px; height: 30px; background: black; color: white; border-radius: 5px; border: none;">Preview</button>
+        </div>
+
+        <div class="project-card">
+        
+         <h3 style="color: red;">WEB APPLICATIONS</h3>
+          <b>Dynamic websites</b>
+          <img src="img/dy.png" alt="Website Project" />
+          <b>Technologies:</b> <P>Typescript|Php| Python</P>
+          <button style="width: 120px; height: 30px; background: black; color: white; border-radius: 5px; border: none;">Preview</button>
+        </div>
+
+          <div class="project-card">
+          
+         <h3 style="color: red;">SOFTWARES</h3>
+          <b>Desktop| Mobile Apps</b>
+          <img src="img/ds.png" alt="Website Project" />
+          <b>Technologies:</b> <P>Java| C| React| Python| Dart</P>
+          <button style="width: 120px; height: 30px; background: black; color: white; border-radius: 5px; border: none;">Preview</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>If you're interested in working with us or have any inquiries, fill the form:</p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name:" required>
+        <input type="email" name="email" placeholder="Email:" required>
+        <textarea name="message" placeholder="Message:" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Reach our Office at Kigali, Rwanda. Or find me on any social Medias:
+    </p>
+    <div class="footer-socials">
+      <a href="#"><img src="img/icons/in.png" alt="LinkedIn"></a>
+      <a href="#"><img src="img/icons/github.png" alt="GitHub"></a>
+      <a href="#"><img src="img/icons/fa.png" alt="Facebook"></a>
+      <a href="#"><img src="img/icons/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="img/icons/ins.png" alt=""></a>
+    </div>
+  </footer>
+
+ <script>const menuToggle = document.getElementById('menuToggle');const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', function() { if (navLinks.style.display === 'flex') { navLinks.style.display = 'none'; } else { navLinks.style.display = 'flex'; } }); </script
+
+
+</body>
+</html>
