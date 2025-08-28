@@ -1,36 +1,51 @@
 body {
   margin: 0;
-  font-family: hind;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
   background: url('img/bg.png') repeat;
   color: #222;
 }
-/* Navigation Bar*/
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1.3rem 10%;  
-  width: 100%;
+
+.navbar {
   display: flex;
-  justify-content: space-between;
-  z-index: 100;
-  background-color: rgba(0,0,0,0.01);
-  backdrop-filter: blur(1.5xpx);
   align-items: center;
-}
-.logo{
-   font-size: 2.5rem;
-
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
 }
 
+.logo {
+  display: flex;
+}
 
+.logo img {
+  width: 200px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 250px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0 1rem 0;
-
 }
 
 .hero-content {
@@ -47,7 +62,7 @@ body {
 }
 
 .hello {
-  color:red;
+  color: red;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -66,12 +81,11 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-
   transition: background 0.2s;
 }
 
 .contact-btn:hover {
-  background:red;
+  background: red;
 }
 
 .socials {
@@ -90,8 +104,6 @@ body {
 .socials a:hover img {
   filter: none;
 }
-
-
 
 .section-title {
   text-align: center;
@@ -136,7 +148,6 @@ body {
   text-align: center;
   border-radius: 14px;
   padding: 1.3rem 2rem;
-  
 }
 
 .projects-cards {
@@ -172,10 +183,8 @@ body {
 .contact {
   max-width: 500px;
   margin: 2.2rem auto;
-  
   border-radius: 14px;
   padding: 1.3rem 2rem;
-  
 }
 
 .contact-form {
@@ -213,10 +222,7 @@ body {
   transition: background 0.2s;
 }
 
-
-
 footer {
-
   text-align: center;
   padding: 2rem 1rem 1rem 1rem;
   margin-top: 2rem;
@@ -242,4 +248,42 @@ footer {
   filter: none;
 }
 
+/* Media Queries */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    align-items: center;
+  }
 
+  .services-cards,
+  .projects-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 899px) {
+  .nav-links {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
