@@ -282,7 +282,7 @@ footer {
   font-size: 100px;
 }
 }
-@media (max-width: 760px){
+@media (min-width: 760px, max-width: 899px ){
   .nav-links {
     display: none;
   }
@@ -296,6 +296,7 @@ footer {
   }
 
 }
+
 
 
 
