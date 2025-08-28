@@ -275,7 +275,7 @@ footer {
   }
   .nav-links {
   list-style: none;
-  display: none;
+  display: flex;
   gap: 2rem;
   margin: 0;
   padding: 0;
@@ -296,6 +296,7 @@ footer {
   }
 
 }
+
 
 
 
