@@ -282,10 +282,12 @@ footer {
   font-size: 100px;
 }
 }
-@media (ma-width: 760px){
+@media (max-width: 760px){
   .nav-links {
     display: none;
   }
+  .navbar {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -294,5 +296,6 @@ footer {
   }
 
 }
+
 
 
