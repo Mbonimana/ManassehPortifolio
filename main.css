@@ -1,192 +1,108 @@
-/* === RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f6f9;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-}
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    h3{
+        text-align: center;
+    }
 
-/* === NAVIGATION === */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #222;
-  color: #fff;
-}
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.logo img {
-  width: 120px;
-}
+    .section {
+      margin-bottom: 25px;
+    }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
 
-.nav-links li a:hover {
-  color: #ffd700;
-}
+    button {
+      background: #4caf50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-/* Mobile nav (hidden by default, shown in small screens) */
-.navbarmob {
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #222;
-  padding: 1rem;
-}
+    button:hover {
+      background: #45a049;
+    }
 
-.navbarmob a {
-  color: #fff;
-  padding: 0.5rem 0;
-}
+    .summary {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
 
-/* === HERO SECTION === */
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 1rem;
-  text-align: center;
-}
+    .summary div {
+      flex: 1;
+      background: #f1f1f1;
+      padding: 15px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
 
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
 
-.hero-content p {
-  max-width: 600px;
-}
+    table, th, td {
+      border: 1px solid #ccc;
+    }
 
-/* === CARDS === */
-.services-cards,
-.projects-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
 
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  transition: transform 0.2s ease;
-}
+    .delete-btn {
+      background: red;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-.card:hover {
-  transform: translateY(-4px);
-}
+    .progress {
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
 
-/* === FOOTER === */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
-}
-
-/* ========================= */
-/* === MEDIA QUERIES ===    */
-/* ========================= */
-
-/* Small Tablets (600–767px) */
-@media (min-width: 600px) and (max-width: 767px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .services-cards,
-  .projects-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-  }
-
-  .nav-links {
-    display: none; /* hide desktop nav */
-  }
-
-  .navbarmob {
-    display: flex; /* show mobile nav */
-  }
-}
-
-/* Tablets (768–1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hero-content {
-    flex-direction: row;
-    gap: 1.5rem;
-    text-align: left;
-  }
-
-  .nav-links {
-    font-size: 1.1rem;
-    gap: 1.2rem;
-  }
-
-  .logo img {
-    width: 150px;
-  }
-
-  .services-cards,
-  .projects-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/* Small Desktops (1024–1365px) */
-@media (min-width: 1024px) and (max-width: 1365px) {
-  .hero-content {
-    max-width: 800px;
-    margin: auto;
-  }
-
-  .nav-links li a {
-    font-size: 1.2rem;
-  }
-
-  .services-cards,
-  .projects-cards {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-/* Large Desktops (≥1366px) */
-@media (min-width: 1366px) {
-  .hero-content {
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  .nav-links li a {
-    font-size: 1.3rem;
-  }
-
-  .services-cards,
-  .projects-cards {
-    flex-direction: row;
-    gap: 2.5rem;
-  }
-}
+    .progress-bar {
+      height: 20px;
+      background: #4caf50;
+      width: 0%;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
