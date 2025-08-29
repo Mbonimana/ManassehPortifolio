@@ -13,7 +13,7 @@ body {
   padding: 1.2rem 2rem;
   position: relative;
   background: none;
-  
+  width: 80%;
 }
 
 .logo {
@@ -432,5 +432,6 @@ footer {
     padding: 0.6rem;
   }
 }
+
 
 
